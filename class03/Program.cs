@@ -26,11 +26,8 @@ namespace class03
             Shelter.AddDog(aron);
             Shelter.ShowShelterDogs();
 
-            Dog addopted1 = Shelter.AdoptDog();
-            Dog.IdentifyDog(addopted1);
-            Dog.Chip chip1 = new Dog.Chip("Nikola", "11Oktomvri");
-            addopted1.AddChip(chip1);
-            Dog.IdentifyDog(addopted1);
+            Dog addopted1 = Shelter.AdoptDog("Nikola", "11Oktomvri");
+            Dog.IdentifyDog(addopted1);              
             Shelter.ShowShelterDogs();
 
 

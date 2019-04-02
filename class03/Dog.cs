@@ -21,7 +21,7 @@ namespace class03
 
         public static void IdentifyDog(Dog dog)
         {
-            if (dog.DogChip != null) Console.WriteLine($"Now the dog {dog.Name} has owner {dog.DogChip.Owner} on the {dog.DogChip.Address} whit id: {dog.DogChip.ID}");
+            if (dog.DogChip != null) Console.WriteLine($"Now the dog {dog.Name} has owner {dog.DogChip.Owner} on the {dog.DogChip.Address} with id: {dog.DogChip.ID}");
             else Console.WriteLine($"The dog {dog.Name} is {dog.Age} years old and its {dog.Color} color");
            
         }

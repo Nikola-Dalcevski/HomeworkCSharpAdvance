@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static class03.Dog;
 
 namespace class03
 {
@@ -17,10 +18,13 @@ namespace class03
         }
 
 
-        public static Dog  AdoptDog()
+        public static Dog  AdoptDog(string owner , string address)
         {
             Console.WriteLine("Dog is realised  from the shelter and addopted");
-            return DogShelter.Dequeue();
+            Chip chip = new Chip(owner, address);
+            var addoptedDog =  DogShelter.Dequeue();
+            addoptedDog.AddChip(chip);
+            return addoptedDog;
         }
 
         public static void ShowShelterDogs()
